@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="#ffde92">
+
+    <TextView
+        android:id="@+id/waktuTanggal"
+        android:textAlignment="textEnd"
+        android:textSize="15sp"
+        android:textColor="@color/colorGray"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="May 18, 2018 18.00"/>
+
+    <TextView
+        android:id="@+id/waktu"
+        android:textSize="20sp"
+        android:textColor="@color/colorBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Waktu : 10 menit"
+        android:layout_below="@+id/waktuTanggal"/>
+
+    <TextView
+        android:id="@+id/jarak"
+        android:textSize="20sp"
+        android:textColor="@color/colorBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jarak : 100 meter"
+        android:layout_below="@+id/waktu"/>
+
+    <TextView
+        android:id="@+id/kecepatan"
+        android:textSize="20sp"
+        android:textColor="@color/colorBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kecepatan : 10 meter/detik"
+        android:layout_below="@+id/jarak"/>
+
+    <TextView
+        android:id="@+id/burnedKalori"
+        android:textSize="30sp"
+        android:textColor="@color/colorBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kalori terbakar : 300 kkal"
+        android:layout_below="@+id/kecepatan"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Simpan aktivitas Anda saat ini?"
+        android:layout_below="@+id/burnedKalori"
+        android:textSize="15sp"
+        android:textColor="@color/colorBlack"/>
+
+</RelativeLayout>

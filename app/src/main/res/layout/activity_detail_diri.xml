@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    tools:context=".DetailDiriActivity">
+
+    <TextView
+        android:id="@+id/labelBerat"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Masukkan berat badan Anda"/>
+
+    <EditText
+        android:id="@+id/berat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Berat badan (dalam kg)"
+        android:maxLines="1"
+        android:inputType="numberDecimal"
+        android:layout_below="@+id/labelBerat"/>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/labelTinggi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Masukkan berat badan Anda"
+        android:layout_below="@+id/berat"/>
+
+    <EditText
+        android:id="@+id/tinggi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tinggi badan (dalam cm)"
+        android:maxLines="1"
+        android:inputType="numberDecimal"
+        android:layout_below="@+id/labelTinggi"/>
+
+    <Button
+        android:id="@+id/buttonLanjut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lanjut"
+        android:layout_marginTop="50dp"
+        android:textAllCaps="false"
+        android:layout_below="@+id/tinggi"
+        android:background="@drawable/button_1"
+        android:textColor="@color/colorWhite"/>
+
+</RelativeLayout>

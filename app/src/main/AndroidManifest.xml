@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gorun.kelompok7.runningapp">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/burn"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data android:name="com.google.geo.API_KEY"
+            android:value="AIzaSyBzco7gzmk3SeQ3GvShM7qYG_m50__V8GI"/>
+
+        <activity
+            android:name=".MainActivity"
+            android:label="Running App"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".DetailDiriActivity"
+            android:screenOrientation="portrait"
+            android:label="Detail Diri"/>
+
+        <activity android:name=".SplashActivity"
+            android:theme="@style/Splashscreen"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>
